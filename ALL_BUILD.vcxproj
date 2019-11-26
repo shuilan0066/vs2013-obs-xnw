@@ -1,0 +1,354 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{1DC52FFB-5EF9-3591-8A35-CDEAA67DF9FB}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\biancheng\obs\obs\Test\obs-studio\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule D:/biancheng/obs/obs/Test/obs-studio/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+D:\biancheng\obs\cmake-3.16.0-rc3-win64-x64\bin\cmake.exe -SD:/biancheng/obs/obs/Test/obs-studio -BD:/biancheng/obs/obs/Test/obs-vs --check-stamp-file D:/biancheng/obs/obs/Test/obs-vs/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\biancheng\obs\cmake-3.16.0-rc3-win64-x64\share\cmake-3.16\Modules\CMakeCInformation.cmake;D:\biancheng\obs\cmake-3.16.0-rc3-win64-x64\share\cmake-3.16\Modules\CMakeCXXInformation.cmake;D:\biancheng\obs\cmake-3.16.0-rc3-win64-x64\share\cmake-3.16\Modules\CMakeCommonLanguageInclude.cmake;D:\biancheng\obs\cmake-3.16.0-rc3-win64-x64\share\cmake-3.16\Modules\CMakeGenericSystem.cmake;D:\biancheng\obs\cmake-3.16.0-rc3-win64-x64\share\cmake-3.16\Modules\CMakeInitializeConfigs.cmake;D:\biancheng\obs\cmake-3.16.0-rc3-win64-x64\share\cmake-3.16\Modules\CMakeLanguageInformation.cmake;D:\biancheng\obs\cmake-3.16.0-rc3-win64-x64\share\cmake-3.16\Modules\CMakeRCInformation.cmake;D:\biancheng\obs\cmake-3.16.0-rc3-win64-x64\share\cmake-3.16\Modules\CMakeSystemSpecificInformation.cmake;D:\biancheng\obs\cmake-3.16.0-rc3-win64-x64\share\cmake-3.16\Modules\CMakeSystemSpecificInitialize.cmake;D:\biancheng\obs\cmake-3.16.0-rc3-win64-x64\share\cmake-3.16\Modules\CPack.cmake;D:\biancheng\obs\cmake-3.16.0-rc3-win64-x64\share\cmake-3.16\Modules\CPackComponent.cmake;D:\biancheng\obs\cmake-3.16.0-rc3-win64-x64\share\cmake-3.16\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\biancheng\obs\cmake-3.16.0-rc3-win64-x64\share\cmake-3.16\Modules\Compiler\MSVC-C.cmake;D:\biancheng\obs\cmake-3.16.0-rc3-win64-x64\share\cmake-3.16\Modules\Compiler\MSVC-CXX.cmake;D:\biancheng\obs\cmake-3.16.0-rc3-win64-x64\share\cmake-3.16\Modules\GNUInstallDirs.cmake;D:\biancheng\obs\cmake-3.16.0-rc3-win64-x64\share\cmake-3.16\Modules\Platform\Windows-MSVC-C.cmake;D:\biancheng\obs\cmake-3.16.0-rc3-win64-x64\share\cmake-3.16\Modules\Platform\Windows-MSVC-CXX.cmake;D:\biancheng\obs\cmake-3.16.0-rc3-win64-x64\share\cmake-3.16\Modules\Platform\Windows-MSVC.cmake;D:\biancheng\obs\cmake-3.16.0-rc3-win64-x64\share\cmake-3.16\Modules\Platform\Windows.cmake;D:\biancheng\obs\cmake-3.16.0-rc3-win64-x64\share\cmake-3.16\Modules\Platform\WindowsPaths.cmake;D:\biancheng\obs\cmake-3.16.0-rc3-win64-x64\share\cmake-3.16\Templates\CPackConfig.cmake.in;D:\biancheng\obs\obs\Test\obs-studio\cmake\ALL_BUILD.vcxproj.user.in;D:\biancheng\obs\obs\Test\obs-studio\cmake\Modules\CopyMSVCBins.cmake;D:\biancheng\obs\obs\Test\obs-studio\cmake\Modules\FindCXX11.cmake;D:\biancheng\obs\obs\Test\obs-studio\cmake\Modules\ObsCpack.cmake;D:\biancheng\obs\obs\Test\obs-studio\cmake\Modules\ObsHelpers.cmake;D:\biancheng\obs\obs\Test\obs-vs\CMakeFiles\3.16.0-rc3\CMakeCCompiler.cmake;D:\biancheng\obs\obs\Test\obs-vs\CMakeFiles\3.16.0-rc3\CMakeCXXCompiler.cmake;D:\biancheng\obs\obs\Test\obs-vs\CMakeFiles\3.16.0-rc3\CMakeRCCompiler.cmake;D:\biancheng\obs\obs\Test\obs-vs\CMakeFiles\3.16.0-rc3\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\biancheng\obs\obs\Test\obs-vs\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule D:/biancheng/obs/obs/Test/obs-studio/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+D:\biancheng\obs\cmake-3.16.0-rc3-win64-x64\bin\cmake.exe -SD:/biancheng/obs/obs/Test/obs-studio -BD:/biancheng/obs/obs/Test/obs-vs --check-stamp-file D:/biancheng/obs/obs/Test/obs-vs/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\biancheng\obs\cmake-3.16.0-rc3-win64-x64\share\cmake-3.16\Modules\CMakeCInformation.cmake;D:\biancheng\obs\cmake-3.16.0-rc3-win64-x64\share\cmake-3.16\Modules\CMakeCXXInformation.cmake;D:\biancheng\obs\cmake-3.16.0-rc3-win64-x64\share\cmake-3.16\Modules\CMakeCommonLanguageInclude.cmake;D:\biancheng\obs\cmake-3.16.0-rc3-win64-x64\share\cmake-3.16\Modules\CMakeGenericSystem.cmake;D:\biancheng\obs\cmake-3.16.0-rc3-win64-x64\share\cmake-3.16\Modules\CMakeInitializeConfigs.cmake;D:\biancheng\obs\cmake-3.16.0-rc3-win64-x64\share\cmake-3.16\Modules\CMakeLanguageInformation.cmake;D:\biancheng\obs\cmake-3.16.0-rc3-win64-x64\share\cmake-3.16\Modules\CMakeRCInformation.cmake;D:\biancheng\obs\cmake-3.16.0-rc3-win64-x64\share\cmake-3.16\Modules\CMakeSystemSpecificInformation.cmake;D:\biancheng\obs\cmake-3.16.0-rc3-win64-x64\share\cmake-3.16\Modules\CMakeSystemSpecificInitialize.cmake;D:\biancheng\obs\cmake-3.16.0-rc3-win64-x64\share\cmake-3.16\Modules\CPack.cmake;D:\biancheng\obs\cmake-3.16.0-rc3-win64-x64\share\cmake-3.16\Modules\CPackComponent.cmake;D:\biancheng\obs\cmake-3.16.0-rc3-win64-x64\share\cmake-3.16\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\biancheng\obs\cmake-3.16.0-rc3-win64-x64\share\cmake-3.16\Modules\Compiler\MSVC-C.cmake;D:\biancheng\obs\cmake-3.16.0-rc3-win64-x64\share\cmake-3.16\Modules\Compiler\MSVC-CXX.cmake;D:\biancheng\obs\cmake-3.16.0-rc3-win64-x64\share\cmake-3.16\Modules\GNUInstallDirs.cmake;D:\biancheng\obs\cmake-3.16.0-rc3-win64-x64\share\cmake-3.16\Modules\Platform\Windows-MSVC-C.cmake;D:\biancheng\obs\cmake-3.16.0-rc3-win64-x64\share\cmake-3.16\Modules\Platform\Windows-MSVC-CXX.cmake;D:\biancheng\obs\cmake-3.16.0-rc3-win64-x64\share\cmake-3.16\Modules\Platform\Windows-MSVC.cmake;D:\biancheng\obs\cmake-3.16.0-rc3-win64-x64\share\cmake-3.16\Modules\Platform\Windows.cmake;D:\biancheng\obs\cmake-3.16.0-rc3-win64-x64\share\cmake-3.16\Modules\Platform\WindowsPaths.cmake;D:\biancheng\obs\cmake-3.16.0-rc3-win64-x64\share\cmake-3.16\Templates\CPackConfig.cmake.in;D:\biancheng\obs\obs\Test\obs-studio\cmake\ALL_BUILD.vcxproj.user.in;D:\biancheng\obs\obs\Test\obs-studio\cmake\Modules\CopyMSVCBins.cmake;D:\biancheng\obs\obs\Test\obs-studio\cmake\Modules\FindCXX11.cmake;D:\biancheng\obs\obs\Test\obs-studio\cmake\Modules\ObsCpack.cmake;D:\biancheng\obs\obs\Test\obs-studio\cmake\Modules\ObsHelpers.cmake;D:\biancheng\obs\obs\Test\obs-vs\CMakeFiles\3.16.0-rc3\CMakeCCompiler.cmake;D:\biancheng\obs\obs\Test\obs-vs\CMakeFiles\3.16.0-rc3\CMakeCXXCompiler.cmake;D:\biancheng\obs\obs\Test\obs-vs\CMakeFiles\3.16.0-rc3\CMakeRCCompiler.cmake;D:\biancheng\obs\obs\Test\obs-vs\CMakeFiles\3.16.0-rc3\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\biancheng\obs\obs\Test\obs-vs\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule D:/biancheng/obs/obs/Test/obs-studio/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+D:\biancheng\obs\cmake-3.16.0-rc3-win64-x64\bin\cmake.exe -SD:/biancheng/obs/obs/Test/obs-studio -BD:/biancheng/obs/obs/Test/obs-vs --check-stamp-file D:/biancheng/obs/obs/Test/obs-vs/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:\biancheng\obs\cmake-3.16.0-rc3-win64-x64\share\cmake-3.16\Modules\CMakeCInformation.cmake;D:\biancheng\obs\cmake-3.16.0-rc3-win64-x64\share\cmake-3.16\Modules\CMakeCXXInformation.cmake;D:\biancheng\obs\cmake-3.16.0-rc3-win64-x64\share\cmake-3.16\Modules\CMakeCommonLanguageInclude.cmake;D:\biancheng\obs\cmake-3.16.0-rc3-win64-x64\share\cmake-3.16\Modules\CMakeGenericSystem.cmake;D:\biancheng\obs\cmake-3.16.0-rc3-win64-x64\share\cmake-3.16\Modules\CMakeInitializeConfigs.cmake;D:\biancheng\obs\cmake-3.16.0-rc3-win64-x64\share\cmake-3.16\Modules\CMakeLanguageInformation.cmake;D:\biancheng\obs\cmake-3.16.0-rc3-win64-x64\share\cmake-3.16\Modules\CMakeRCInformation.cmake;D:\biancheng\obs\cmake-3.16.0-rc3-win64-x64\share\cmake-3.16\Modules\CMakeSystemSpecificInformation.cmake;D:\biancheng\obs\cmake-3.16.0-rc3-win64-x64\share\cmake-3.16\Modules\CMakeSystemSpecificInitialize.cmake;D:\biancheng\obs\cmake-3.16.0-rc3-win64-x64\share\cmake-3.16\Modules\CPack.cmake;D:\biancheng\obs\cmake-3.16.0-rc3-win64-x64\share\cmake-3.16\Modules\CPackComponent.cmake;D:\biancheng\obs\cmake-3.16.0-rc3-win64-x64\share\cmake-3.16\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\biancheng\obs\cmake-3.16.0-rc3-win64-x64\share\cmake-3.16\Modules\Compiler\MSVC-C.cmake;D:\biancheng\obs\cmake-3.16.0-rc3-win64-x64\share\cmake-3.16\Modules\Compiler\MSVC-CXX.cmake;D:\biancheng\obs\cmake-3.16.0-rc3-win64-x64\share\cmake-3.16\Modules\GNUInstallDirs.cmake;D:\biancheng\obs\cmake-3.16.0-rc3-win64-x64\share\cmake-3.16\Modules\Platform\Windows-MSVC-C.cmake;D:\biancheng\obs\cmake-3.16.0-rc3-win64-x64\share\cmake-3.16\Modules\Platform\Windows-MSVC-CXX.cmake;D:\biancheng\obs\cmake-3.16.0-rc3-win64-x64\share\cmake-3.16\Modules\Platform\Windows-MSVC.cmake;D:\biancheng\obs\cmake-3.16.0-rc3-win64-x64\share\cmake-3.16\Modules\Platform\Windows.cmake;D:\biancheng\obs\cmake-3.16.0-rc3-win64-x64\share\cmake-3.16\Modules\Platform\WindowsPaths.cmake;D:\biancheng\obs\cmake-3.16.0-rc3-win64-x64\share\cmake-3.16\Templates\CPackConfig.cmake.in;D:\biancheng\obs\obs\Test\obs-studio\cmake\ALL_BUILD.vcxproj.user.in;D:\biancheng\obs\obs\Test\obs-studio\cmake\Modules\CopyMSVCBins.cmake;D:\biancheng\obs\obs\Test\obs-studio\cmake\Modules\FindCXX11.cmake;D:\biancheng\obs\obs\Test\obs-studio\cmake\Modules\ObsCpack.cmake;D:\biancheng\obs\obs\Test\obs-studio\cmake\Modules\ObsHelpers.cmake;D:\biancheng\obs\obs\Test\obs-vs\CMakeFiles\3.16.0-rc3\CMakeCCompiler.cmake;D:\biancheng\obs\obs\Test\obs-vs\CMakeFiles\3.16.0-rc3\CMakeCXXCompiler.cmake;D:\biancheng\obs\obs\Test\obs-vs\CMakeFiles\3.16.0-rc3\CMakeRCCompiler.cmake;D:\biancheng\obs\obs\Test\obs-vs\CMakeFiles\3.16.0-rc3\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:\biancheng\obs\obs\Test\obs-vs\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule D:/biancheng/obs/obs/Test/obs-studio/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+D:\biancheng\obs\cmake-3.16.0-rc3-win64-x64\bin\cmake.exe -SD:/biancheng/obs/obs/Test/obs-studio -BD:/biancheng/obs/obs/Test/obs-vs --check-stamp-file D:/biancheng/obs/obs/Test/obs-vs/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\biancheng\obs\cmake-3.16.0-rc3-win64-x64\share\cmake-3.16\Modules\CMakeCInformation.cmake;D:\biancheng\obs\cmake-3.16.0-rc3-win64-x64\share\cmake-3.16\Modules\CMakeCXXInformation.cmake;D:\biancheng\obs\cmake-3.16.0-rc3-win64-x64\share\cmake-3.16\Modules\CMakeCommonLanguageInclude.cmake;D:\biancheng\obs\cmake-3.16.0-rc3-win64-x64\share\cmake-3.16\Modules\CMakeGenericSystem.cmake;D:\biancheng\obs\cmake-3.16.0-rc3-win64-x64\share\cmake-3.16\Modules\CMakeInitializeConfigs.cmake;D:\biancheng\obs\cmake-3.16.0-rc3-win64-x64\share\cmake-3.16\Modules\CMakeLanguageInformation.cmake;D:\biancheng\obs\cmake-3.16.0-rc3-win64-x64\share\cmake-3.16\Modules\CMakeRCInformation.cmake;D:\biancheng\obs\cmake-3.16.0-rc3-win64-x64\share\cmake-3.16\Modules\CMakeSystemSpecificInformation.cmake;D:\biancheng\obs\cmake-3.16.0-rc3-win64-x64\share\cmake-3.16\Modules\CMakeSystemSpecificInitialize.cmake;D:\biancheng\obs\cmake-3.16.0-rc3-win64-x64\share\cmake-3.16\Modules\CPack.cmake;D:\biancheng\obs\cmake-3.16.0-rc3-win64-x64\share\cmake-3.16\Modules\CPackComponent.cmake;D:\biancheng\obs\cmake-3.16.0-rc3-win64-x64\share\cmake-3.16\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\biancheng\obs\cmake-3.16.0-rc3-win64-x64\share\cmake-3.16\Modules\Compiler\MSVC-C.cmake;D:\biancheng\obs\cmake-3.16.0-rc3-win64-x64\share\cmake-3.16\Modules\Compiler\MSVC-CXX.cmake;D:\biancheng\obs\cmake-3.16.0-rc3-win64-x64\share\cmake-3.16\Modules\GNUInstallDirs.cmake;D:\biancheng\obs\cmake-3.16.0-rc3-win64-x64\share\cmake-3.16\Modules\Platform\Windows-MSVC-C.cmake;D:\biancheng\obs\cmake-3.16.0-rc3-win64-x64\share\cmake-3.16\Modules\Platform\Windows-MSVC-CXX.cmake;D:\biancheng\obs\cmake-3.16.0-rc3-win64-x64\share\cmake-3.16\Modules\Platform\Windows-MSVC.cmake;D:\biancheng\obs\cmake-3.16.0-rc3-win64-x64\share\cmake-3.16\Modules\Platform\Windows.cmake;D:\biancheng\obs\cmake-3.16.0-rc3-win64-x64\share\cmake-3.16\Modules\Platform\WindowsPaths.cmake;D:\biancheng\obs\cmake-3.16.0-rc3-win64-x64\share\cmake-3.16\Templates\CPackConfig.cmake.in;D:\biancheng\obs\obs\Test\obs-studio\cmake\ALL_BUILD.vcxproj.user.in;D:\biancheng\obs\obs\Test\obs-studio\cmake\Modules\CopyMSVCBins.cmake;D:\biancheng\obs\obs\Test\obs-studio\cmake\Modules\FindCXX11.cmake;D:\biancheng\obs\obs\Test\obs-studio\cmake\Modules\ObsCpack.cmake;D:\biancheng\obs\obs\Test\obs-studio\cmake\Modules\ObsHelpers.cmake;D:\biancheng\obs\obs\Test\obs-vs\CMakeFiles\3.16.0-rc3\CMakeCCompiler.cmake;D:\biancheng\obs\obs\Test\obs-vs\CMakeFiles\3.16.0-rc3\CMakeCXXCompiler.cmake;D:\biancheng\obs\obs\Test\obs-vs\CMakeFiles\3.16.0-rc3\CMakeRCCompiler.cmake;D:\biancheng\obs\obs\Test\obs-vs\CMakeFiles\3.16.0-rc3\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\biancheng\obs\obs\Test\obs-vs\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\biancheng\obs\obs\Test\obs-vs\ZERO_CHECK.vcxproj">
+      <Project>{422FD3B4-388D-3A46-8126-9CF388AE5CCD}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\biancheng\obs\obs\Test\obs-vs\deps\blake2\blake2.vcxproj">
+      <Project>{A4A98008-9005-398A-94AE-92D7D5063DDA}</Project>
+      <Name>blake2</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\biancheng\obs\obs\Test\obs-vs\plugins\coreaudio-encoder\coreaudio-encoder.vcxproj">
+      <Project>{BBF28A1D-BB7C-3A53-891A-FBAB2C47D857}</Project>
+      <Name>coreaudio-encoder</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\biancheng\obs\obs\Test\obs-vs\plugins\obs-ffmpeg\ffmpeg-mux\ffmpeg-mux.vcxproj">
+      <Project>{BD6810A2-295A-357A-8145-61578286F453}</Project>
+      <Name>ffmpeg-mux</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\biancheng\obs\obs\Test\obs-vs\deps\file-updater\file-updater.vcxproj">
+      <Project>{DD30B48E-1F9F-3AA2-9EAB-B2B34A066A2D}</Project>
+      <Name>file-updater</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\biancheng\obs\obs\Test\obs-vs\UI\frontend-plugins\frontend-tools\frontend-tools.vcxproj">
+      <Project>{5AB70A49-18CA-34D5-B695-710E5CE1AF3C}</Project>
+      <Name>frontend-tools</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\biancheng\obs\obs\Test\obs-vs\plugins\win-capture\get-graphics-offsets\get-graphics-offsets.vcxproj">
+      <Project>{C9EAB797-9AC0-3B08-BDB2-DB779019133D}</Project>
+      <Name>get-graphics-offsets</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\biancheng\obs\obs\Test\obs-vs\deps\glad\glad.vcxproj">
+      <Project>{C7E6BA29-71D4-3AAA-8FBD-A7D6B61C834F}</Project>
+      <Name>glad</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\biancheng\obs\obs\Test\obs-vs\plugins\win-capture\graphics-hook\graphics-hook.vcxproj">
+      <Project>{FA500935-C4C6-3632-BBBA-8F69D29F0F86}</Project>
+      <Name>graphics-hook</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\biancheng\obs\obs\Test\obs-vs\plugins\image-source\image-source.vcxproj">
+      <Project>{69169049-A137-3399-A1E5-342758243629}</Project>
+      <Name>image-source</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\biancheng\obs\obs\Test\obs-vs\plugins\win-capture\inject-helper\inject-helper.vcxproj">
+      <Project>{B7EFD180-5376-328F-9654-5569662A39CF}</Project>
+      <Name>inject-helper</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\biancheng\obs\obs\Test\obs-vs\deps\ipc-util\ipc-util.vcxproj">
+      <Project>{7416F15F-2054-3155-93CE-DE39A0767141}</Project>
+      <Name>ipc-util</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\biancheng\obs\obs\Test\obs-vs\deps\jansson\jansson.vcxproj">
+      <Project>{04AF902E-FFDE-351C-832D-222337EE52C3}</Project>
+      <Name>jansson</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\biancheng\obs\obs\Test\obs-vs\libobs\libobs.vcxproj">
+      <Project>{2569BE68-6D9A-36D3-AAB9-F87A9FDD920E}</Project>
+      <Name>libobs</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\biancheng\obs\obs\Test\obs-vs\libobs-d3d11\libobs-d3d11.vcxproj">
+      <Project>{5F49842F-C514-325F-B1BB-DDE003502FC8}</Project>
+      <Name>libobs-d3d11</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\biancheng\obs\obs\Test\obs-vs\libobs-opengl\libobs-opengl.vcxproj">
+      <Project>{67B39734-0174-3B11-8702-BFE6D13FE205}</Project>
+      <Name>libobs-opengl</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\biancheng\obs\obs\Test\obs-vs\deps\lzma\lzma.vcxproj">
+      <Project>{DD36051F-EFF6-32CE-B6B8-16DFCC4B78E8}</Project>
+      <Name>lzma</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\biancheng\obs\obs\Test\obs-vs\deps\media-playback\media-playback.vcxproj">
+      <Project>{81C7F7E5-10CD-36B6-A94A-52C79419CA88}</Project>
+      <Name>media-playback</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\biancheng\obs\obs\Test\obs-vs\UI\obs.vcxproj">
+      <Project>{9B517080-9A81-3C27-92C1-1C44412CF061}</Project>
+      <Name>obs</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\biancheng\obs\obs\Test\obs-vs\plugins\obs-ffmpeg\obs-ffmpeg.vcxproj">
+      <Project>{7FFF536D-ABFB-3AC3-9E9B-569440A76D92}</Project>
+      <Name>obs-ffmpeg</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\biancheng\obs\obs\Test\obs-vs\plugins\obs-filters\obs-filters.vcxproj">
+      <Project>{EC326FBC-ABC7-3449-84D2-07E86B0D3928}</Project>
+      <Name>obs-filters</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\biancheng\obs\obs\Test\obs-vs\UI\obs-frontend-api\obs-frontend-api.vcxproj">
+      <Project>{F511F94D-0DD1-3585-9ACC-29816970DB98}</Project>
+      <Name>obs-frontend-api</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\biancheng\obs\obs\Test\obs-vs\plugins\obs-outputs\obs-outputs.vcxproj">
+      <Project>{8E69A9DF-B23B-3059-BCDD-4C4868F810FD}</Project>
+      <Name>obs-outputs</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\biancheng\obs\obs\Test\obs-vs\plugins\obs-qsv11\obs-qsv11.vcxproj">
+      <Project>{649802B7-86A1-3015-9159-9FEFDBD8A3ED}</Project>
+      <Name>obs-qsv11</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\biancheng\obs\obs\Test\obs-vs\plugins\obs-text\obs-text.vcxproj">
+      <Project>{428EFE75-184A-3EFB-823E-78BE3AFF0658}</Project>
+      <Name>obs-text</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\biancheng\obs\obs\Test\obs-vs\plugins\obs-transitions\obs-transitions.vcxproj">
+      <Project>{9692B5AB-F002-3D1F-B419-A183F9F3CFB9}</Project>
+      <Name>obs-transitions</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\biancheng\obs\obs\Test\obs-vs\plugins\obs-vst\obs-vst.vcxproj">
+      <Project>{819F3389-94EA-383B-8D0A-1259F7D37696}</Project>
+      <Name>obs-vst</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\biancheng\obs\obs\Test\obs-vs\plugins\obs-x264\obs-x264.vcxproj">
+      <Project>{8C0EE143-D929-364C-AD98-3C3C85615A0B}</Project>
+      <Name>obs-x264</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\biancheng\obs\obs\Test\obs-vs\plugins\rtmp-services\rtmp-services.vcxproj">
+      <Project>{8B7E6C52-D9BF-30AB-BA3A-C7823B297FFF}</Project>
+      <Name>rtmp-services</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\biancheng\obs\obs\Test\obs-vs\plugins\text-freetype2\text-freetype2.vcxproj">
+      <Project>{28A35E9A-48B2-3AFB-9EDD-808557779301}</Project>
+      <Name>text-freetype2</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\biancheng\obs\obs\Test\obs-vs\deps\w32-pthreads\w32-pthreads.vcxproj">
+      <Project>{DF0B9ED5-88DB-30B6-809C-061EE142BEDC}</Project>
+      <Name>w32-pthreads</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\biancheng\obs\obs\Test\obs-vs\plugins\win-capture\win-capture.vcxproj">
+      <Project>{995FDD49-ACCA-3753-A334-EEB26D391937}</Project>
+      <Name>win-capture</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\biancheng\obs\obs\Test\obs-vs\plugins\decklink\win\win-decklink.vcxproj">
+      <Project>{6D83ECA7-D663-3259-BA1E-5FE722BC1C1B}</Project>
+      <Name>win-decklink</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\biancheng\obs\obs\Test\obs-vs\plugins\win-dshow\win-dshow.vcxproj">
+      <Project>{837E285A-09F2-3B88-969C-D4993C98D3E4}</Project>
+      <Name>win-dshow</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\biancheng\obs\obs\Test\obs-vs\plugins\win-mf\win-mf.vcxproj">
+      <Project>{51EF0AD3-EAD2-3DDC-AAD9-840227D74271}</Project>
+      <Name>win-mf</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\biancheng\obs\obs\Test\obs-vs\plugins\win-wasapi\win-wasapi.vcxproj">
+      <Project>{7670F116-0825-38EA-8081-1BE55F7117AC}</Project>
+      <Name>win-wasapi</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

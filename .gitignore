@@ -1,0 +1,14 @@
+*.[ao]
+*.obj
+*.sbr
+*.log
+*.idb
+*.aps
+*.exp
+*.ilk
+*.pdb
+*.dmp
+*.sdf
+*.opensdf
+*.suo
+*.bsc

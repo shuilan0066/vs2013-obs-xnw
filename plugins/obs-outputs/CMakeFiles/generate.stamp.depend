@@ -1,0 +1,7 @@
+# CMake generation dependency list for this directory.
+D:/biancheng/obs/cmake-3.16.0-rc3-win64-x64/share/cmake-3.16/Modules/FindPackageHandleStandardArgs.cmake
+D:/biancheng/obs/cmake-3.16.0-rc3-win64-x64/share/cmake-3.16/Modules/FindPackageMessage.cmake
+D:/biancheng/obs/cmake-3.16.0-rc3-win64-x64/share/cmake-3.16/Modules/FindPkgConfig.cmake
+D:/biancheng/obs/obs/Test/obs-studio/cmake/Modules/FindLibcurl.cmake
+D:/biancheng/obs/obs/Test/obs-studio/plugins/obs-outputs/CMakeLists.txt
+D:/biancheng/obs/obs/Test/obs-studio/plugins/obs-outputs/obs-outputs-config.h.in
