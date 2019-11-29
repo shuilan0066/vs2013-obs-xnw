@@ -1001,6 +1001,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">%(AdditionalInputs)</AdditionalInputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\biancheng\obs\obs\Test\obs-vs\UI\ui_OBSBasic.h</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+      <SubType>Designer</SubType>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
@@ -1513,6 +1514,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClCompile Include="D:\biancheng\obs\obs\Test\obs-studio\UI\win-update\update-window.cpp" />
     <ClCompile Include="D:\biancheng\obs\obs\Test\obs-studio\UI\win-update\win-update.cpp" />
     <ClCompile Include="D:\biancheng\obs\obs\Test\obs-studio\UI\win-update\win-update-helpers.cpp" />
+    <ClCompile Include="myGlobal.cpp" />
+    <ClInclude Include="myGlobal.h" />
     <ResourceCompile Include="D:\biancheng\obs\obs\Test\obs-studio\UI\obs.rc" />
     <ClCompile Include="D:\biancheng\obs\obs\Test\obs-studio\deps\libff\libff\ff-util.c">
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
@@ -1569,6 +1572,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClCompile Include="D:\biancheng\obs\obs\Test\obs-studio\UI\remote-text.cpp" />
     <ClCompile Include="D:\biancheng\obs\obs\Test\obs-studio\UI\audio-encoders.cpp" />
     <ClCompile Include="D:\biancheng\obs\obs\Test\obs-studio\UI\qt-wrappers.cpp" />
+    <ClInclude Include="..\..\obs-studio\UI\resource.h" />
     <ClInclude Include="D:\biancheng\obs\obs\Test\obs-studio\UI\win-update\update-window.hpp" />
     <ClInclude Include="D:\biancheng\obs\obs\Test\obs-studio\UI\win-update\win-update.hpp" />
     <ClInclude Include="D:\biancheng\obs\obs\Test\obs-studio\UI\win-update\win-update-helpers.hpp" />
@@ -1657,6 +1661,10 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <Project>{F511F94D-0DD1-3585-9ACC-29816970DB98}</Project>
       <Name>obs-frontend-api</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\..\obs-studio\cmake\winrc\obs-studio.ico" />
+    <Image Include="..\..\obs-studio\cmake\winrc\pen.ico" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

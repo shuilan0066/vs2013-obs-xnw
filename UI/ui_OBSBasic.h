@@ -115,6 +115,8 @@ public:
     QHBoxLayout *horizontalLayout_2;
     QLabel *previewDisabledLabel;
     OBSBasicPreview *preview;
+    QPushButton *pushButton;
+    QPushButton *pushButton_2;
     QHBoxLayout *previewLayout;
     QVBoxLayout *previewTextLayout;
     QMenuBar *menubar;
@@ -188,7 +190,7 @@ public:
     {
         if (OBSBasic->objectName().isEmpty())
             OBSBasic->setObjectName(QStringLiteral("OBSBasic"));
-        OBSBasic->resize(2783, 730);
+        OBSBasic->resize(2874, 730);
         QSizePolicy sizePolicy(QSizePolicy::Minimum, QSizePolicy::Minimum);
         sizePolicy.setHorizontalStretch(0);
         sizePolicy.setVerticalStretch(0);
@@ -423,6 +425,13 @@ public:
         preview->setMinimumSize(QSize(32, 32));
         preview->setFocusPolicy(Qt::ClickFocus);
         preview->setContextMenuPolicy(Qt::CustomContextMenu);
+        pushButton = new QPushButton(preview);
+        pushButton->setObjectName(QStringLiteral("pushButton"));
+        pushButton->setGeometry(QRect(1160, 90, 75, 111));
+        pushButton->setCheckable(false);
+        pushButton_2 = new QPushButton(preview);
+        pushButton_2->setObjectName(QStringLiteral("pushButton_2"));
+        pushButton_2->setGeometry(QRect(50, 270, 75, 101));
 
         horizontalLayout_2->addWidget(preview);
 
@@ -444,7 +453,7 @@ public:
         OBSBasic->setCentralWidget(centralwidget);
         menubar = new QMenuBar(OBSBasic);
         menubar->setObjectName(QStringLiteral("menubar"));
-        menubar->setGeometry(QRect(0, 0, 2783, 23));
+        menubar->setGeometry(QRect(0, 0, 2874, 23));
         menu_File = new QMenu(menubar);
         menu_File->setObjectName(QStringLiteral("menu_File"));
         menuBasic_MainMenu_Help = new QMenu(menubar);
@@ -489,7 +498,7 @@ public:
         OBSBasic->setStatusBar(statusbar);
         scenesDock = new QDockWidget(OBSBasic);
         scenesDock->setObjectName(QStringLiteral("scenesDock"));
-        scenesDock->setEnabled(false);
+        scenesDock->setEnabled(true);
         scenesDock->setFeatures(QDockWidget::AllDockWidgetFeatures);
         dockWidgetContents_2 = new QWidget();
         dockWidgetContents_2->setObjectName(QStringLiteral("dockWidgetContents_2"));
@@ -609,7 +618,7 @@ public:
         scrollArea->setWidgetResizable(true);
         volumeWidgets = new QWidget();
         volumeWidgets->setObjectName(QStringLiteral("volumeWidgets"));
-        volumeWidgets->setGeometry(QRect(0, 0, 610, 16));
+        volumeWidgets->setGeometry(QRect(0, 0, 631, 16));
         QSizePolicy sizePolicy3(QSizePolicy::Preferred, QSizePolicy::Maximum);
         sizePolicy3.setHorizontalStretch(0);
         sizePolicy3.setVerticalStretch(0);
@@ -901,6 +910,7 @@ public:
         retranslateUi(OBSBasic);
         QObject::connect(actionE_xit, SIGNAL(triggered()), OBSBasic, SLOT(close()));
         QObject::connect(exitButton, SIGNAL(clicked()), OBSBasic, SLOT(close()));
+        QObject::connect(pushButton, SIGNAL(clicked()), preview, SLOT(hide()));
 
         QMetaObject::connectSlotsByName(OBSBasic);
     } // setupUi
@@ -991,6 +1001,8 @@ public:
         toggleTransitions->setText(QApplication::translate("OBSBasic", "Basic.SceneTransitions", Q_NULLPTR));
         toggleControls->setText(QApplication::translate("OBSBasic", "Basic.Main.Controls", Q_NULLPTR));
         previewDisabledLabel->setText(QApplication::translate("OBSBasic", "Basic.Main.PreviewDisabled", Q_NULLPTR));
+        pushButton->setText(QApplication::translate("OBSBasic", "PushButton", Q_NULLPTR));
+        pushButton_2->setText(QApplication::translate("OBSBasic", "PushButton", Q_NULLPTR));
         menu_File->setTitle(QApplication::translate("OBSBasic", "Basic.MainMenu.File", Q_NULLPTR));
         menuBasic_MainMenu_Help->setTitle(QApplication::translate("OBSBasic", "Basic.MainMenu.Help", Q_NULLPTR));
         menuLogFiles->setTitle(QApplication::translate("OBSBasic", "Basic.MainMenu.Help.Logs", Q_NULLPTR));

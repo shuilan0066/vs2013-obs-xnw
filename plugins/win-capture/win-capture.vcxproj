@@ -110,7 +110,8 @@
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <PostBuildEvent>
-      <Message>					</Message>
+      <Message>
+      </Message>
       <Command>setlocal
 D:\biancheng\obs\cmake-3.16.0-rc3-win64-x64\bin\cmake.exe -E copy D:/biancheng/obs/obs/Test/obs-vs/plugins/win-capture/Debug/win-capture.dll D:/biancheng/obs/obs/Test/obs-vs/rundir/Debug/obs-plugins/32bit/win-capture.dll
 if %errorlevel% neq 0 goto :cmEnd
@@ -211,7 +212,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <PostBuildEvent>
-      <Message>					</Message>
+      <Message>
+      </Message>
       <Command>setlocal
 D:\biancheng\obs\cmake-3.16.0-rc3-win64-x64\bin\cmake.exe -E copy D:/biancheng/obs/obs/Test/obs-vs/plugins/win-capture/Release/win-capture.dll D:/biancheng/obs/obs/Test/obs-vs/rundir/Release/obs-plugins/32bit/win-capture.dll
 if %errorlevel% neq 0 goto :cmEnd
@@ -312,7 +314,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <PostBuildEvent>
-      <Message>					</Message>
+      <Message>
+      </Message>
       <Command>setlocal
 D:\biancheng\obs\cmake-3.16.0-rc3-win64-x64\bin\cmake.exe -E copy D:/biancheng/obs/obs/Test/obs-vs/plugins/win-capture/MinSizeRel/win-capture.dll D:/biancheng/obs/obs/Test/obs-vs/rundir/MinSizeRel/obs-plugins/32bit/win-capture.dll
 if %errorlevel% neq 0 goto :cmEnd
@@ -412,7 +415,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <PostBuildEvent>
-      <Message>					</Message>
+      <Message>
+      </Message>
       <Command>setlocal
 D:\biancheng\obs\cmake-3.16.0-rc3-win64-x64\bin\cmake.exe -E copy D:/biancheng/obs/obs/Test/obs-vs/plugins/win-capture/RelWithDebInfo/win-capture.dll D:/biancheng/obs/obs/Test/obs-vs/rundir/RelWithDebInfo/obs-plugins/32bit/win-capture.dll
 if %errorlevel% neq 0 goto :cmEnd

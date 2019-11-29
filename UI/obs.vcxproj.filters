@@ -157,6 +157,9 @@
     <ClCompile Include="D:\biancheng\obs\obs\Test\obs-vs\UI\qrc_obs.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="myGlobal.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="D:\biancheng\obs\obs\Test\obs-studio\UI\win-update\update-window.hpp">
@@ -348,6 +351,10 @@
     <ClInclude Include="D:\biancheng\obs\obs\Test\obs-vs\UI\ui_OBSRemux.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\obs-studio\UI\resource.h" />
+    <ClInclude Include="myGlobal.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="D:\biancheng\obs\obs\Test\obs-studio\UI\forms\NameDialog.ui" />
@@ -380,5 +387,9 @@
     <Filter Include="Source Files">
       <UniqueIdentifier>{7F86491C-7D1A-3491-A52C-88CF30CD01BE}</UniqueIdentifier>
     </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\..\obs-studio\cmake\winrc\pen.ico" />
+    <Image Include="..\..\obs-studio\cmake\winrc\obs-studio.ico" />
   </ItemGroup>
 </Project>
